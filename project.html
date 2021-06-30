@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPECTRUM</title>
+  <style>
+    .topnav {
+  overflow: hidden;
+  background-color:white;
+  position: fixed;
+  right: 0px;
+  top: 0;
+  
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: blue;
+  color: white;
+}
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+   .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+body{
+  background-image: url(wallpaper6.jpg);
+  background-attachment: fixed;
+}
+.head{
+  color: white;
+}
+a{
+  color: white;
+}
+.a{
+height: 400px;
+width: 400px;
+ position: relative;
+          left: 250px;
+}
+.b{
+height: 400px;
+width: 400px;
+}
+
+.one{
+  color: white;
+  text-align: center;
+}
+*{
+  text-decoration: none;
+}
+ span{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+        h3{
+          color: white;
+          font-family: sans-serif;
+        }
+        td{
+          height: 200px;
+          width: 200px;
+        }
+  </style>
+</head>
+<body>
+   <div class="topnav" id="myTopnav">
+  
+  
+  <a href="contact.html" >Contact</a>
+  <a href="#project" >Project</a>
+  <a href="About.html" >About</a>
+  <a href="landing page.html" class="active">🏠</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>   
+   <h1 class="head">Our Projects </h1>
+    <hr>
+    <hr>
+    <table cellspacing="100">
+      <tr>
+        <td> <img class="b" src="a.jpeg" ></td>
+        <td>
+          <h1 class="one">AuDu</h1><br>
+          <h3> This is a automatic dustbin, which works using arduino and the phone's inbuilt gyroscope. This dustbin also contains a lid which can be automatically opened or clased when waste materials are brought near it.</h3>
+         <h2><a href="https://github.com/Hyper-Matrix/AuDu-The-automatic-dustbin"><span>GitHub</span></a><br></h2>
+
+        </td>
+      </tr>
+      <tr>
+        <td><h1 class="one">YoPlaDo</h1><br>
+        <h3>A simple python program to download Youtube Playlist at once. Project is a simple combination of Web Scrapping and Youtube-Downloading. Our approach enables the user be able to download Youtube videos in a playlist at one go.</h3>
+        <h2><a href="https://github.com/Dstri26/YoPlaDo-Youtube-Playlist-Downloader"><span>GitHub</span></a><br></h2>
+
+        </td>
+        <td><img class="a" src="b.jpeg" ></td>
+        <td><h1 class="one"></h1>
+        
+        </td>
+      </tr>
+      <tr>
+        <td> <img class="b" src="c.jpeg" ></td>
+        <td><h1 class="one"></h1>
+       <h3>A MP Neuron model to classify breast cancer as malign or bening as per given data . This is a simple McCulloch-Pitts Neuron Model for testing whether a breast cancer is malignant or benign by checking it's features such as radius,texture,area,etc.</h3>
+       <h2><a href="https://github.com/C3Suryansu/CNN-using-CIFAR10"><span>GitHub</span></a></h2>
+        </td>
+      </tr>
+      <tr>
+        <td><h1 class="one">FRIENDLY-MEDICO</h1><br>
+         <h3>In this pandemic not everyone of us have the courage to go to hospitals and check our own reports.this app will take some short details and keep it in a database. In future it can be used by medicals to get the health data of a person and if any issue is found by the doctor they can directly contact them and problems can be solved over phones.</h3>
+        <h2><a href="https://github.com/Ashishkumarpanda/FRIENDLY-MEDICO"><span>GitHub</span></a></h2>
+
+        
+        </td>
+        <td> <img class="a" src="d.jpeg" ></td>
+      </tr>
+      <tr>
+        <td> <img class="b" src="e.jpeg" ></td>
+        <td><h1 class="one">Extractive-Text-Summarization</h1><br>
+        <h3>A simple python program which can find the most important sentences in a paragraph and can give them as the output. Quite useful for the tasks of reading short summaries of news articles and such. Unlike machine learning models, this doesn't train but rather uses a graph based approach to rank the sentences based on their cosine similarities and give the desired output as a result.</h3>
+        <h2><a href="https://github.com/C3Suryansu/Extractive-Text-Summarization"><span>GitHub</span></a></h2>
+
+        </td>
+      </tr>
+    </table>
+          
+        
+</body>
+</html>

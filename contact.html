@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECTRUM</title>
+    <link rel="shortcut icon" href="spectrum logo.png" type="image/x-icon">
+    <style>
+      *{
+        text-decoration: none;
+      }
+      h1{
+        color:black;
+      }
+      h4{
+        color:black;
+      }
+      body{
+    text-align: center;
+    background-color:rgb(236, 180, 38);
+    }
+    .topnav {
+  overflow: hidden;
+ 
+  position: fixed;
+  right: 0px;
+  
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.facebook{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 420px;
+
+
+}
+.insta{
+    height: 160px;
+    width: 165px;
+position: absolute;
+    left: 600px;
+
+
+}
+.linkedin{
+   height: 150px;
+    width: 125px;
+position: absolute;
+    left: 210px;
+    
+}
+.github{
+ height: 160px;
+    width: 165px;
+position: absolute;
+    left: 990px;
+}
+
+.youtube{
+    height: 100px;
+    width: 120px;
+position: absolute;
+    left: 810px;
+    top: 480px;
+
+    
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+div{
+    
+    
+    
+    margin-right: 0px;
+    margin: 0px;
+    width:1330px ;
+    height: 700px;
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+      
+      
+    </style>
+</head>
+<body>
+     <div class="topnav" id="myTopnav">
+  
+  
+  <a href="#contact" >Contact</a>
+  <a href="project.html" >Project</a>
+  <a href="About.html" >About</a>
+  <a href="landing page.html" class="active">🏠</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>  
+  <div>
+    
+        <h1>Our Address 🏫</h1>
+   <h4>College of Engineering and Technology ,Kalinganagar,Bhubaneswar,Odisha</h4><br>
+   <h1>📧Mail Id</h1>
+   <h4>spectrumclub.cetb@cet.edu.in</h4><br><br><br>
+
+  <h1>Connect With Us</h1>
+  <table cellspacing="30">
+      <tr>
+          <td>
+               <a href="https://m.facebook.com/spCETrum"><img class="facebook" src="facebook.png" alt="facebook"></a></td>
+          <td> 
+
+            <a href="https://www.instagram.com/spectrum.cetb/"><img class="insta" src="instagram.png" alt="insta"></a></td>
+          <td>
+             
+            <a href="http://www.youtube.com/channel/UCFJdttLXjuUyd6tpMAW2Hhw"><img class="youtube" src="youtube.png" alt="youtube"></a></td>
+            <td><a href="https://github.com/Spectrum-CETB"><img class="github" src="github.png" alt="github"></a></td>
+            <td><a href="https://www.linkedin.com/in/spectrum-cet-3b71431b1/"><img class="linkedin" src="linkedin.png" alt="linkedin"></a></td>
+      </tr>
+  </table>
+    
+</div>
+             
+              
+ 
+
+  
+ 
+</body>
+</html>
